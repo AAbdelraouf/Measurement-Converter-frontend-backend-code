@@ -3,16 +3,16 @@ var app = express();
 
 var port = process.env.PORT || 3000
 
-app.use(express.static('public'));
+app.use(express.static('mainPage'));
 app.use(express.static('aboutPage'));
 
 //calling the about us route
-var things = require('./aboutPage.js');
+var things = require('./aboutPageJS.js');
 app.use('/about', things);
 
 // reading files
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/public/htmlFile.html')  
+    res.sendFile(__dirname + '/mainPage/htmlFile.html')  
 });
 
 // setting up the port to listen on
