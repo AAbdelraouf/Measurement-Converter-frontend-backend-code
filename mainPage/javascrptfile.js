@@ -1,5 +1,6 @@
 $(document).ready(function(){    
 console.log('welcome!') 
+alert('test from uv')
 // hidding the about paragraph page //
 $('#theAboutParagraph').hide()
     
