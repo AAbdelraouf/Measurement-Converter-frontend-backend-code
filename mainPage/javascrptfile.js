@@ -1,5 +1,8 @@
 $(document).ready(function(){    
 console.log('welcome!') 
+
+// hidding the about paragraph page //
+$('#theAboutParagraph').hide()
     
 // The about page function //
 function theAboutbuttonAnimation(){
