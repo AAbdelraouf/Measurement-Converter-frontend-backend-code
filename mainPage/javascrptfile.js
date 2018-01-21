@@ -1,9 +1,22 @@
 $(document).ready(function(){    
 console.log('welcome!') 
+
+// hidding the about paragraph page //
+$('#theAboutParagraph').hide()
     
-$('#theAboutButton').on('click', function(){
-location.href = "https://msconversion.herokuapp.com/about";
-});
+// The about page function //
+function theAboutbuttonAnimation(){
+    var switchTurns = true;    
+    $('#theAboutButton').on('click', function(){
+    if (switchTurns == true){
+        location.href = "https://msconversion.herokuapp.com/about";
+    switchTurns = false;}
+    
+else {
+    location.href = "https://msconversion.herokuapp.com/";
+    }
+    })};
+    theAboutbuttonAnimation();
 
 // switching views function //
 function switchViewColors(buttonId, backgroundColor, colorCode){
