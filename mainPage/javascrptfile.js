@@ -1,23 +1,12 @@
 $(document).ready(function(){    
 console.log('welcome!') 
 
-// hidding the about paragraph page //
-$('#theAboutParagraph').hide()
-    
-// The about page function //
-function theAboutbuttonAnimation(){
-    var switchTurns = true;    
-    $('#theAboutButton').on('click', function(){
-    if (switchTurns == true){
-    $("#wholeSection").fadeOut();
-    $('#theAboutParagraph').fadeIn();
-    $("#h1Message").html('About the Measurement conversion');
-    $('#theAboutButton').html('< Go Back');
-    $('#theAboutButton').css({backgroundColor: 'wheat'});
-    $('#h1Message').css({color: 'wheat'});
-    switchTurns = false;}
-    
-else if (switchTurns == false){
+$('#theAboutButton').on('click', function(){
+    console.log('Welcome!')
+    location.href = "https://msconversion.herokuapp.com/about";
+    });
+
+ if (switchTurns == false){
     $("#wholeSection").fadeIn();
     $('#theAboutParagraph').fadeOut();
     $("#h1Message").html('Welcome to WLTS Measurment converter site');
@@ -25,7 +14,7 @@ else if (switchTurns == false){
     $('#theAboutButton').css({backgroundColor: '#A8F72B'});
     $('#h1Message').css({color: '#46DF46'});
     switchTurns = true;}
-    })};
+    });
     theAboutbuttonAnimation();
 
 // switching views function //

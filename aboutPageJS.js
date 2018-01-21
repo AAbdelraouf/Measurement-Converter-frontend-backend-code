@@ -10,5 +10,3 @@ router.get('/', function(req, res){
 
 //exporting this router to use in main.js
 module.exports = router;
-
-
