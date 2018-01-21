@@ -6,15 +6,8 @@ $('#theAboutParagraph').hide()
     
 // The about page function //
 function theAboutbuttonAnimation(){
-    var switchTurns = true;    
     $('#theAboutButton').on('click', function(){
-    if (switchTurns == true){
-        location.href = "https://msconversion.herokuapp.com/about";
-    switchTurns = false;}
-    
-else {
-    location.href = "https://msconversion.herokuapp.com/";
-    }
+    location.href = "https://msconversion.herokuapp.com/about";
     })};
     theAboutbuttonAnimation();
 
